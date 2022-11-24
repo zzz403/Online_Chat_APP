@@ -34,12 +34,12 @@
             <!-- search list // history chat list -->
             <div class = "chatlist">
 
-                <div class = "block active">
+                <div class = "block">
                     <div class = "imgbk">
                         <!-- 头像 -->
                         <img src = "/image/friend1.jpg" class = "cover">
                     </div>
-                    <div class = "infors">
+                    <div class = "infors" onclick="location.href = './chat.html'">
                         <div class = "inforHead">
                             <!-- 联系人名字 -->
                             <h4>Joey W</h4>
@@ -52,12 +52,13 @@
                         </div>
                     </div>
                 </div>
+                
                 <!-- 如果未读需要将“block”改为“block unread” 并且在“message——list”中添加<b>-->
-                <div class = "block unread">
+                <div class = "block active">
                     <div class = "imgbk">
                         <img src = "/image/groupchat1.png" class = "cover">
                     </div>
-                    <div class = "infors" onclick="location.href = './groupchat.html'">
+                    <div class = "infors">
                         <div class = "inforHead">
                             <h4>葉月龙纪元</h4>
                             <p class = "time">23:35</p>
@@ -65,7 +66,6 @@
                         <div class = "message_list">
                             <p>What's Up</p>
                             <!-- 未读消息 -->
-                            <b>1</b>
                         </div>
                     </div>
                 </div>
@@ -217,7 +217,7 @@
             <div class = "header">
                 <div class = "chatName">
                     <!-- 聊天对象的名字 -->
-                    <h4>Joey W</h4>
+                    <h4>葉月龙纪元(4)</h4>
                 </div>
                 <ul class = "header_icons">
                     <!--  https://ionic.io/ionicons  --> 
@@ -227,42 +227,38 @@
                 </ul>
             </div>
             <div class = "chatBox">
-                <a href = "./forgot.html">history messages</a>
-                <div class = "message self">
-                    <p>Hi<br><span>12:15</span></p>
+                <div class = "history">
+                    <a href = "./forgot.html">history messages</a>
                 </div>
+                <b>HYL</b>
                 <div class = "message other">
-                    <p>Hello<br><span>12:15</span></p>
+                    <p>卧槽<br><span>12:15</span></p>
                 </div>
+                <b>HYL</b>
                 <div class = "message other">
-                    <p>我就是Joey,Joey就是我<br><span>12:15</span></p>
+                    <p>我发现一件事<br><span>12:15</span></p>
                 </div>
-                <div class = "message self">
-                    <p>好的吧……？<br><span>12:15</span></p>
-                </div>
-                <div class = "message self">
-                    <p>你知不知道那种<br><span>12:15</span></p>
-                </div>
-                <div class = "message self">
-                    <p>没有背景的背景 背景是镂空的的图片<br><span>12:15</span></p>
-                </div>
+                <b>HYL</b>
                 <div class = "message other">
-                    <p>草，这破题我花了我两个小时 离谱了 这么简单的题 我写了两个小时<br><span>12:15</span></p>
+                    <p>断网断不掉原神<br><span>12:15</span></p>
+                </div>
+                <b>HYL</b>
+                <div class = "message other">
+                    <p><img src="/image/bqb2.png"><span>12:15</span></p>
                 </div>
                 <div class = "message self">
-                    <p><img src="/image/bqb.png"><span>12:15</span></p>
+                    <p>6<br><span>12:15</span></p>
                 </div>
+                <b>千葉</b>
                 <div class = "message other">
-                    <p>我本来想着做道题然后接着写物理的<br><span>12:15</span></p>
+                    <p>ohhhhhhhhh<br><span>12:15</span></p>
                 </div>
+                <b>千葉</b>
                 <div class = "message other">
-                    <p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊阿啊啊啊<br><span>12:15</span></p>
+                    <p>是谁住在深海的大菠萝里？<br><span>12:15</span></p>
                 </div>
-                <div class = "message other">
-                    <p><img src="/image/chatpic2.png"><span>12:15</span></p>
-                </div>
-                <div class = "message other">
-                    <p><img src="/image/chatpic3.jpg"><span>12:15</span></p>
+                <div class = "message self">
+                    <p>是joey!是joey!<br><span>12:15</span></p>
                 </div>
             </div>
             <div class = "chatBox-input">

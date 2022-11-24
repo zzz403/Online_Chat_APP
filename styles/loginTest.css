@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 
 * {
@@ -36,90 +37,63 @@
     margin-bottom: 20px;
 }
 
-
-.box .input-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    margin-bottom: 10px;
+.input-box{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
 }
 
-.box .input-box label{
+.input-box input{
+    position: relative;
+    width: 93%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em; 
+}
+
+.input-box label{
     position: absolute;
-    left:50px;
+    left:0;
     padding:20px 10px 10px;
     color: #8f8f8f;
     pointer-events: none;
     letter-spacing: 0.05em;
     transition:all 0.5s;
-}
+} 
 
+
+.input-box{
+	width: 500px;
+	position: relative;
+	margin-top: 50px;
+}
 .input-box input{
-    box-sizing:border-box;
-    color: rgba(255,255,255,0.9);
-    font-size:14px;
-    height: 35px;
-    width: 250px;
-    background: rgba(255,255,255,0.3);
-    border: 1px solid rgba(255,255,255,0.5);
-    border-radius: 5px;
-    transition:0.2s;
-    outline: none;
-    padding:0 10px;
-}
-
-.input-box input:foucus{
-    border: 1px solid rgba(255,0,0,0.8);
-}
-
-.box .btn-box{
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:start;
-}
-
-/* forgot password */
-.links a{
-    font-size:13px;
-    text-decoration: none;
-    color: rgba(255,255,255,0.5);
-    transition: 0.2s;
-    width: 250px;
-    text-align: end;
-}
-
-.links a:hover{
-    color: rgba(255,255,255,1);
-}
-
-.box button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
-
-.box button {
-    width: 120px;
-    height: 35px;
-    border: 1px solid rgba(197,81,58,0.8);
-    background: rgba(255,81,58,0.8);
-    color: rgba(255,255,255,0.9);
-    border-radius: 5px;
+	outline: none;
+	border: none;
+	width: 100%;
+	padding: 10px 0;
+	color: #000;
+	font-size: 16px;
+	border-bottom: 1px solid red;
+	background: none;
 }
 
 
-.box button:hover{
-    border:1px solid rgba(197,81,58,0.8);
-    background: rgba(197,81,58,0.8);
-}
+/* .login input:focus + label,
+.login input:valid + label{
+    /* color: #45f3ff; */
+    /* color: black;
+    transform: translateY(-34px);
+    font-size: 0.75em;
+} */ 
 
 .input-box input:focus + label,
 .input-box input:valid + label{
-	color: rgb(172, 11, 11);
-    transform: translateY(-34px);
-    font-size: 1.2em;
+	font-size: 12px;
+	top: -20px;
+	color: red;
 }

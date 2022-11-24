@@ -304,6 +304,11 @@ body {
     left:375px;
 }
 
+.chatBox b{
+    font-size: 0.9em;
+    font-weight: 250;
+}
+
 .chatBox-input ion-icon{
     cursor: pointer;
     font-size: 1.8em;
