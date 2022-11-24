@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.backround {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../image/pic2.jpg) no-repeat;
+    background-image: cover;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 380px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    background: rgba(50,50,50,0.2);
+}
+
+.box > h2{
+    color: rgba(145, 208, 27, 0.9);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.input-box{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.input-box input{
+    position: relative;
+    width: 93%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em; 
+}
+
+.input-box label{
+    position: absolute;
+    left:0;
+    padding:20px 10px 10px;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition:all 0.5s;
+} 
+
+
+.input-box{
+	width: 500px;
+	position: relative;
+	margin-top: 50px;
+}
+.input-box input{
+	outline: none;
+	border: none;
+	width: 100%;
+	padding: 10px 0;
+	color: #000;
+	font-size: 16px;
+	border-bottom: 1px solid red;
+	background: none;
+}
+
+
+/* .login input:focus + label,
+.login input:valid + label{
+    /* color: #45f3ff; */
+    /* color: black;
+    transform: translateY(-34px);
+    font-size: 0.75em;
+} */ 
+
+.input-box input:focus + label,
+.input-box input:valid + label{
+	font-size: 12px;
+	top: -20px;
+	color: red;
+}

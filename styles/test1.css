@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.input-box{
+	width: 500px;
+	position: relative;
+	margin-top: 50px;
+}
+.input-box input{
+	outline: none;
+	border: none;
+	width: 100%;
+	padding: 10px 0;
+	color: #000;
+	font-size: 16px;
+	border-bottom: 1px solid red;
+	background: none;
+}
+.input-box label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #000;
+	font-size: 16px;
+	/*这个属性的默认值是auto 默认是这个元素可以被点击
+	但是如果我们写了none  就是这个元素不能被点击，就好像它可见但是不能用  
+	可望而不可及*/
+	pointer-events: none;
+	/*加个过度*/
+	transition: all 0.5s;
+}
+/*: focus 选择器是当input获得焦点是触发的样式 + 是相邻兄弟选择器
+	去找与input相邻的兄弟label*/
+/*：valid 选择器是判断input 框的内容是否合法，如果合法会执行下面的属性代码，
+	不合法就不会执行，我们刚开始写布局的时候给input框写了required 我们删掉看对比 
+	当没有required的话   input框的值就会被认为一直合法，所以一直都是下方的样式，
+	但是密码不会，密码框的值为空，那么这句话就不合法，required不能为空
+	当我们给密码框写点东西的时候才会执行以下代码
+
+*/
+.input-box input:focus + label,
+.input-box input:valid + label{
+	font-size: 12px;
+	top: -20px;
+	color: red;
+}

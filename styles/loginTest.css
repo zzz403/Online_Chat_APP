@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.backround {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../image/pic2.jpg) no-repeat;
+    background-image: cover;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 380px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    background: rgba(50,50,50,0.2);
+}
+
+.box > h2{
+    color: rgba(145, 208, 27, 0.9);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+
+.box .input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.box .input-box label{
+    position: absolute;
+    left:50px;
+    padding:20px 10px 10px;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition:all 0.5s;
+}
+
+.input-box input{
+    box-sizing:border-box;
+    color: rgba(255,255,255,0.9);
+    font-size:14px;
+    height: 35px;
+    width: 250px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    transition:0.2s;
+    outline: none;
+    padding:0 10px;
+}
+
+.input-box input:foucus{
+    border: 1px solid rgba(255,0,0,0.8);
+}
+
+.box .btn-box{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:start;
+}
+
+/* forgot password */
+.links a{
+    font-size:13px;
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    transition: 0.2s;
+    width: 250px;
+    text-align: end;
+}
+
+.links a:hover{
+    color: rgba(255,255,255,1);
+}
+
+.box button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.box button {
+    width: 120px;
+    height: 35px;
+    border: 1px solid rgba(197,81,58,0.8);
+    background: rgba(255,81,58,0.8);
+    color: rgba(255,255,255,0.9);
+    border-radius: 5px;
+}
+
+
+.box button:hover{
+    border:1px solid rgba(197,81,58,0.8);
+    background: rgba(197,81,58,0.8);
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label{
+	color: rgb(172, 11, 11);
+    transform: translateY(-34px);
+    font-size: 1.2em;
+}

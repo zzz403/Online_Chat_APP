@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatPage</title>
+    <link rel="stylesheet" href="/styles/chat_style.css">
+</head>
+<body>
+    <div class = "box">
+        <div class = "leftSide">
+            <div class = "header">
+                <div class = "userpic">
+                    <!-- 用户的头像 -->
+                    <img src = "/image/userImg.jpg" class = "cover">
+                </div>
+                <div class = "userName">
+                    <!-- 用户的名字 -->
+                    <h4>August<br><span>uid:108588722</span></h4>
+                </div>
+                <ul class = "header_icons">
+                    <!--  https://ionic.io/ionicons  --> 
+                    <li><ion-icon onclick="location.href = './login.html'" name="log-out-outline"></ion-icon></li>
+                    <li><ion-icon name="chatbubble-ellipses-outline"></ion-icon></li>
+                    <li><ion-icon name="archive-outline"></ion-icon></li>
+                </ul>
+            </div>
+            <!-- Search -->
+            <div class = "searchBar">
+                <div>
+                    <input type = "text" placeholder="search or start chat here">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+            <!-- search list // history chat list -->
+            <div class = "chatlist">
+
+                <div class = "block active">
+                    <div class = "imgbk">
+                        <!-- 头像 -->
+                        <img src = "/image/friend1.jpg" class = "cover">
+                    </div>
+                    <div class = "infors">
+                        <div class = "inforHead">
+                            <!-- 联系人名字 -->
+                            <h4>Joey W</h4>
+                            <!-- 时间 -->
+                            <p class = "time">24:00</p>
+                        </div>
+                        <div class = "message_list">
+                            <!-- 消息 -->
+                            <p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊阿啊啊啊</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果未读需要将“block”改为“block unread” 并且在“message——list”中添加<b>-->
+                <div class = "block unread">
+                    <div class = "imgbk">
+                        <img src = "/image/friend2.jpg" class = "cover">
+                    </div>
+                    <div class = "infors">
+                        <div class = "inforHead">
+                            <h4>HYL</h4>
+                            <p class = "time">23:35</p>
+                        </div>
+                        <div class = "message_list">
+                            <p>What's Up</p>
+                            <!-- 未读消息 -->
+                            <b>1</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "block unread">
+                    <div class = "imgbk">
+                        <img src = "/image/friend3.jpg" class = "cover">
+                    </div>
+                    <div class = "infors">
+                        <div class = "inforHead">
+                            <h4>JOE</h4>
+                            <p class = "time">21:35</p>
+                        </div>
+                        <div class = "message_list">
+                            <p>你在干啥</p>
+                            <b>2</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "block unread">
+                    <div class = "imgbk">
+                        <img src = "/image/friend4.jpg" class = "cover">
+                    </div>
+                    <div class = "infors">
+                        <div class = "inforHead">
+                            <h4>JiaYue</h4>
+                            <p class = "time">20:52</p>
+                        </div>
+                        <div class = "message_list">
+                            <p>哎对对对</p>
+                            <b>1</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "block">
+                    <div class = "imgbk">
+                        <img src = "/image/friend5.jpg" class = "cover">
+                    </div>
+                    <div class = "infors">
+                        <div class = "inforHead">
+                            <h4>Ximing</h4>
+                            <p class = "time">20:32</p>
+                        </div>
+                        <div class = "message_list">
+                            <p>这个地方可以改一下</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "block">
+                    <div class = "imgbk">
+                        <img src = "/image/friend6.jpg" class = "cover">
+                    </div>
+                    <div class = "infors">
+                        <div class = "inforHead">
+                            <h4>yutong</h4>
+                            <p class = "time">19:25</p>
+                        </div>
+                        <div class = "message_list">
+                            <p>嘶</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "block">
+                    <div class = "imgbk">
+                        <img src = "/image/friend7.jpg" class = "cover">
+                    </div>
+                    <div class = "infors">
+                        <div class = "inforHead">
+                            <h4>李杰西</h4>
+                            <p class = "time">17:05</p>
+                        </div>
+                        <div class = "message_list">
+                            <p>吃屎吧你</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "block">
+                    <div class = "imgbk">
+                        <img src = "/image/friend8.jpg" class = "cover">
+                    </div>
+                    <div class = "infors">
+                        <div class = "inforHead">
+                            <h4>Yolanda</h4>
+                            <p class = "time">12:05</p>
+                        </div>
+                        <div class = "message_list">
+                            <p>啊这</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "block">
+                    <div class = "imgbk">
+                        <img src = "/image/friend9.jpg" class = "cover">
+                    </div>
+                    <div class = "infors">
+                        <div class = "inforHead">
+                            <h4>47111</h4>
+                            <p class = "time">11:25</p>
+                        </div>
+                        <div class = "message_list">
+                            <p>对啊对啊</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "block unread">
+                    <div class = "imgbk">
+                        <img src = "/image/friend10.jpg" class = "cover">
+                    </div>
+                    <div class = "infors">
+                        <div class = "inforHead">
+                            <h4>肖肖乐</h4>
+                            <p class = "time">8:25</p>
+                        </div>
+                        <div class = "message_list">
+                            <p>草</p>
+                            <b>2</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "block">
+                    <div class = "imgbk">
+                        <img src = "/image/friend11.jpg" class = "cover">
+                    </div>
+                    <div class = "infors">
+                        <div class = "inforHead">
+                            <h4>大傻杯</h4>
+                            <p class = "time">6:25</p>
+                        </div>
+                        <div class = "message_list">
+                            <p>akshasfhasf</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>    
+
+
+
+        <div class = "rightSide">
+            <div class = "header">
+                <div class = "chatName">
+                    <!-- 聊天对象的名字 -->
+                    <h4>Joey W</h4>
+                </div>
+                <ul class = "header_icons">
+                    <!--  https://ionic.io/ionicons  --> 
+                    <li><ion-icon name="happy-outline"></ion-icon></li>
+                    <li><ion-icon name="add-circle-outline"></ion-icon></li>
+                    <li><ion-icon name="folder-outline"></ion-icon></li>
+                </ul>
+            </div>
+            <div class = "chatBox">
+                <a href = "./forgot.html">history messages</a>
+                <div class = "message self">
+                    <p>Hi<br><span>12:15</span></p>
+                </div>
+                <div class = "message other">
+                    <p>Hello<br><span>12:15</span></p>
+                </div>
+                <div class = "message other">
+                    <p>我就是Joey,Joey就是我<br><span>12:15</span></p>
+                </div>
+                <div class = "message self">
+                    <p>好的吧……？<br><span>12:15</span></p>
+                </div>
+                <div class = "message self">
+                    <p>你知不知道那种<br><span>12:15</span></p>
+                </div>
+                <div class = "message self">
+                    <p>没有背景的背景 背景是镂空的的图片<br><span>12:15</span></p>
+                </div>
+                <div class = "message other">
+                    <p>草，这破题我花了我两个小时 离谱了 这么简单的题 我写了两个小时<br><span>12:15</span></p>
+                </div>
+                <div class = "message self">
+                    <p><img src="/image/bqb.png"><span>12:15</span></p>
+                </div>
+                <div class = "message other">
+                    <p>我本来想着做道题然后接着写物理的<br><span>12:15</span></p>
+                </div>
+                <div class = "message other">
+                    <p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊阿啊啊啊<br><span>12:15</span></p>
+                </div>
+                <div class = "message other">
+                    <p><img src="/image/chatpic2.png"><span>12:15</span></p>
+                </div>
+                <div class = "message other">
+                    <p><img src="/image/chatpic3.jpg"><span>12:15</span></p>
+                </div>
+            </div>
+            <div class = "chatBox-input">
+                <ion-icon name="beer-outline"></ion-icon>
+                <ion-icon name="bed-outline"></ion-icon>
+                <input type = "text" placeholder= "Type something here">
+                <ion-icon name="send-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+    <!-- icon网站必要的script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+<!--
+                       _oo0oo_
+                      o8888888o
+                      88" . "88
+                      (| -_- |)
+                      0\  =  /0
+                    ___/`---'\___
+                  .' \\|     |// '.
+                 / \\|||  :  |||// \
+                / _||||| -:- |||||- \
+               |   | \\\  - /// |   |
+               | \_|  ''\---/''  |_/ |
+               \  .-\__  '-'  ___/-. /
+             ___'. .'  /--.--\  `. .'___
+          ."" '<  `.___\_<|>_/___.' >' "".
+         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+         \  \ `_.   \_ __\ /__ _/   .-` /  /
+     =====`-.____`.___ \_____/___.-`___.-'=====
+                       `=---='
+
+
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+           佛祖保佑     永不宕机     永无BUG
+ -->
