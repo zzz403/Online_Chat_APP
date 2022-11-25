@@ -49,7 +49,7 @@
     position: absolute;
     left:50px;
     padding:20px 10px 10px;
-    color: #8f8f8f;
+    color: #cdcccc;
     pointer-events: none;
     letter-spacing: 0.05em;
     transition:all 0.5s;
@@ -73,6 +73,8 @@
 .input-box input:foucus{
     border: 1px solid rgba(255,0,0,0.8);
 }
+
+
 
 .box .btn-box{
     width: 250px;
@@ -128,7 +130,7 @@
 
 .input-box input:focus + label,
 .input-box input:valid + label{
-	color: rgb(37, 93, 188);
+	color: rgba(145, 208, 27, 0.9);
     transform: translateY(-34px);
     font-weight: 400;
     font-size: 1.1em;
