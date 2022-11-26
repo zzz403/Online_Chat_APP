@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-.backround {
+.backround-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +15,7 @@
     background-image: cover;
 }
 
-.box{
+.box-login{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,14 +30,14 @@
     background: rgba(50,50,50,0.2);
 }
 
-.box > h2{
+.box-login > h2{
     color: rgba(145, 208, 27, 0.9);
     font-size: 35px;
     margin-bottom: 20px;
 }
 
 
-.box .input-box{
+.box-login .input-box-login{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +45,7 @@
     margin-bottom: 20px;
 }
 
-.box .input-box label{
+.box-login .input-box-login label{
     position: absolute;
     left:50px;
     padding:20px 10px 10px;
@@ -55,7 +55,7 @@
     transition:all 0.5s;
 }
 
-.input-box input{
+.input-box-login input{
     box-sizing:border-box;
     color: rgba(255,255,255,0.9);
     font-size:14px;
@@ -70,26 +70,16 @@
     padding:0 10px;
 }
 
-.input-box input:foucus{
+.input-box-login input:foucus{
     border: 1px solid rgba(255,0,0,0.8);
 }
 
-
-
-.box .btn-box{
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:start;
-}
-
-.links{
+.links-login{
     justify-content: space-between;
     margin: -20px;
 }
 /* forgot password */
-.links a{
+.links-login a{
     font-size:13px;
     text-decoration: none;
     color: rgba(255,255,255,0.5);
@@ -99,11 +89,11 @@
     margin: 40px;
 }
 
-.links a:hover{
+.links-login a:hover{
     color: rgba(255,255,255,1);
 }
 
-.box button {
+.box-login button {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,7 +101,7 @@
     margin: 20px;
 }
 
-.box button {
+.box-login button {
     position: relative;
     top: 10px;
     width: 70%;
@@ -123,24 +113,21 @@
 }
 
 
-.box button:hover{
+.box-login button:hover{
     border:1px solid rgba(197,81,58,0.8);
     background: rgba(197,81,58,0.8);
 }
 
-.input-box input:focus + label,
-.input-box input:valid + label{
+.input-box-login input:focus + label,
+.input-box-login input:valid + label{
 	color: rgba(145, 208, 27, 0.9);
     transform: translateY(-34px);
     font-weight: 400;
     font-size: 1.1em;
 }
 
-.input-box input:focus,
-.input-box input:valid{
+.input-box-login input:focus,
+.input-box-login input:valid{
     background: rgba(255,255,255,0.3);
     border: 1px solid rgba(255,255,255,0.5);
 }
-
-
-
