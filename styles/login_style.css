@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-.backround {
+.backround-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
